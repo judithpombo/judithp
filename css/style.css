@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+*{
+	
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+body{
+	background: url("../img/fondo.png");
+}
+.contenedora{
+	width: 60%;
+	margin: 1px auto;
+	background: white;
+	border: 1px solid black;
+}
+
+nav a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	background:#ddd;
+	width: 20%;
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+
+}
+nav a:hover{
+	border-bottom: 3px solid #FF4081;
+	text-decoration: underline;
+    color:#FF4081;
+}
+h1{
+	padding: 20px;
+}
+#clear{
+	clear: both;
+}
+section{
+	overflow: hidden;
+	margin: 30px;
+}
+section >div{
+	text-align: center;
+	display:block;
+}
+section article {
+	width: 80%;
+	display: inline-block;
+	margin: 0px 20px;
+	min-height: 120px;
+	padding: 20px;	
+}
+section article h2{
+	padding:  10px 0;
+}
+li{
+	text-align: justify;
+}
+@media screen and (max-width: 230px ){
+	section article{
+		width: 100%;
+		margin-left: 0;
+
+	}
+	.contenedora{
+		width: 100%;
+		margin: 0;
+	}
+}

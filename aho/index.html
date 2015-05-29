@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Juego el Ahorcado</title>
+        <meta name="viewport" content="width=device-widthinitial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>              
+        <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>         
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>         
+        <link rel="stylesheet" href="estilo.css">       
+        <title>Ejemplo de juego</title>
+       
+</head>
+
+<body>
+
+    
+<h2>Juego del ahorcado</h2>
+
+    
+<table>
+<form>    
+  
+      
+    
+         <tr class="ju">   
+
+        <input type="button" value="A" onclick="msg('a')" id="a">
+
+        <input type="button" value="B" onclick="msg('b')" id="b">
+
+        <input type="button" value="C" onclick="msg('c')" id="c">
+
+        <input type="button" value="D" onclick="msg('d')" id="d">
+
+        <input type="button" value="E" onclick="msg('e')" id="e">
+
+        <input type="button" value="F" onclick="msg('f')" id="f">
+
+        <input type="button" value="G" onclick="msg('g')" id="g">
+
+        <input type="button" value="H" onclick="msg('h')" id="h">
+
+        <input type="button" value="I" onclick="msg('i')" id="i">
+
+        <input type="button" value="J" onclick="msg('j')" id="j">
+
+      </tr> 
+      <tr class="ju">
+
+        <input type="button" value="K" onclick="msg('k')" id="k">
+
+        <input type="button" value="L" onclick="msg('l')" id="l">
+
+        <input type="button" value="M" onclick="msg('m')" id="m">
+
+        <input type="button" value="N" onclick="msg('n')" id="n">
+
+        <input type="button" value="Ñ" onclick="msg('ñ')" id="ñ">
+
+        <input type="button" value="O" onclick="msg('o')" id="o">
+
+        <input type="button" value="P" onclick="msg('p')" id="p">
+
+        <input type="button" value="Q" onclick="msg('q')" id="q">
+
+        <input type="button" value="R" onclick="msg('r')" id="r">
+
+        <input type="button" value="S" onclick="msg('s')" id="s">
+
+      </tr>   
+      <tr class="ju">
+
+        <input type="button" value="T" onclick="msg('t')" id="t">
+
+        <input type="button" value="U" onclick="msg('u')" id="u">
+
+        <input type="button" value="V" onclick="msg('v')" id="v">
+
+        <input type="button" value="W" onclick="msg('w')" id="w">
+
+        <input type="button" value="X" onclick="msg('x')" id="x">
+
+        <input type="button" value="Y" onclick="msg('y')" id="y">
+
+        <input type="button" value="Z" onclick="msg('z')" id="z">
+        </tr>
+
+
+
+        
+
+
+
+
+
+  
+</form>
+
+<tr>
+    <td align=middle width=150 colSpan=3><TEXTAREA name='displayHombre'rows="6" cols="15" id="area111" readonly></TEXTAREA> </td>
+    <td align=middle width=150 colSpan=3><TEXTAREA name='displayLetras' rows="6" cols="15" readonly></TEXTAREA> </td>
+    
+</tr>
+  <tr>
+    <td align=middle width=300 colSpan=6><input size=42 name=displayPalabra> </td>
+    <td align=middle>&nbsp; </td>
+  </tr>
+  <tr>
+
+    <td vAlign=center align=right>Perdidas: <input size=4 value=0 
+      name=perdidas> </td>
+  </tr>
+  <tr> 
+<td vAlign=center align=right>Ganadas: <input size=4 value=0 
+      name=ganadas> </td>
+  </tr>
+
+  <tr>
+    
+    <td align=middle colSpan=3><input type="button" value="Juego nuevo" > </td>
+
+    <td align=middle><input type=button value=Limpiar name='B1' onclick="limpiar();"> </td>
+  </tr>
+
+</table>
+<hr>
+
+
+<script>
+
+function msg(lol){
+	document.getElementById('area111').innerHTML += lol;
+	document.getElementById(lol).disabled=true; 	
+}
+function limpiar(){
+	location.reload(true);
+}
+</script>
+
+    
+
+    <script src="js/jquery/jquery.js" type="text/javascript"></script>  
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>  
+</body>
+</html>

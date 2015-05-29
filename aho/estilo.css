@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+    margin:0 auto;
+}
+input{
+    padding: 10px;
+
+}
+header{
+    
+    text-transform: uppercase;
+    color: #ffbd53;
+    background-color: #6666ff;
+    margin: 0;
+    padding: 10px;
+}
+body{
+    background-color:#cccccc;
+    color: #330033;    
+}
+textarea{
+    resize: none;
+}
+
+@media screen and (max-width:345px){
+    .ju input{
+       margin: 1ps solid red;
+    }
+    
+    
+}
